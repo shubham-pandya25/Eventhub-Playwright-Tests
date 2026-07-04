@@ -15,7 +15,7 @@ const {
   parseSeatCount
 } = require('./helpers');
 
-// Steps from "test 1" — login and land on the events page
+
 async function loginAndBrowserEvents(page) {
   await openLoginPage(page);
   await getEmailField(page);
@@ -24,7 +24,7 @@ async function loginAndBrowserEvents(page) {
   await browserEvent(page);
 }
 
-// Steps from "test 2" — apply search/category/city filters
+
 async function applyFilter(page) {
   const searchEvent = searchBox(page);
   await searchEvent.fill('World');
